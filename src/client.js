@@ -9,7 +9,7 @@ class Client extends AkairoClient {
 
         this.commandHandler = new CommandHandler(this, {
             directory: './commands',
-            prefix: '/',
+            prefix: '//',
             allowMention: true,
             commandUtil: true,
             storeMessages: true,

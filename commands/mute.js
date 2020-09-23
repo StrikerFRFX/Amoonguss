@@ -11,7 +11,7 @@ class MuteCommand extends Command {
     }
 
     async exec(msg) {
-        if (admins.indexOf(msg.member.id) > -1) {
+        if (admins.includes(msg.member.id)) {
             msg.member.voice.channel.members.each(user => {
                 msg.guild.member(user).voice.setMute(true)
             })

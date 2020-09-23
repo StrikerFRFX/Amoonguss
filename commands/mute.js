@@ -1,19 +1,22 @@
 const { Command } = require('discord-akairo');
+const admins = ['558694503964475430', '215509157837537280', '254707488744538113'];
 
 class MuteCommand extends Command {
     constructor() {
         super('mute', {
             category: 'general',
             aliases: ['mute', 'm'],
-            typing: true,
-            ownerOnly: true
+            typing: true
         });
     }
 
     async exec(msg) {
-        msg.member.voice.channel.members.each(user => {
-            msg.guild.member(user).voice.setMute(true)
-        })
+        if (admins.indexOf(msg.user.id) > -1) {
+            msg.member.voice.channel.members.each(user => {
+                msg.guild.member(user).voice.setMute(true)
+            })
+        }
+        
     }
 }
 

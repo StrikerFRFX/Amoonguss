@@ -12,7 +12,7 @@ class MuteCommand extends Command {
 
     async exec(msg) {
         msg.member.voice.channel.members.each(user => {
-            msg.guild.member(user).voice.mute()
+            msg.guild.member(user).voice.setMute(true)
         })
     }
 }

@@ -1,0 +1,29 @@
+{
+    "name": "color-roles",
+    "version": "1.0.0",
+    "description": "Rainbow go brrr",
+    "main": "main.js",
+    "scripts": {
+        "test": "eslint ./",
+        "start": "pm2 start main.js && pm2 logs all",
+        "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Strikerrr/color-roles.git"
+    },
+    "author": "Striker <zzstrikerzzyt@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Strikerrr/color-roles/issues"
+    },
+    "homepage": "https://github.com/Strikerrr/color-roles#readme",
+    "dependencies": {
+        "discord-akairo": "github:discord-akairo/discord-akairo",
+        "discord.js": "github:discordjs/discord.js",
+        "eslint": "^6.3.0",
+        "snekfetch": "^4.0.4",
+        "superagent": "^5.1.0",
+        "pm2": "^4.4.0"
+    }
+}

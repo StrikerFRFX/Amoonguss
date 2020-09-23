@@ -1,7 +1,7 @@
 {
-    "name": "color-roles",
+    "name": "amoonguss",
     "version": "1.0.0",
-    "description": "Rainbow go brrr",
+    "description": "Muting go brrrrrrr",
     "main": "main.js",
     "scripts": {
         "test": "eslint ./",
@@ -10,14 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Strikerrr/color-roles.git"
+        "url": "git+https://github.com/Strikerrr/amoonguss.git"
     },
     "author": "Striker <zzstrikerzzyt@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Strikerrr/color-roles/issues"
+        "url": "https://github.com/Strikerrr/amoonguss/issues"
     },
-    "homepage": "https://github.com/Strikerrr/color-roles#readme",
+    "homepage": "https://github.com/Strikerrr/amoonguss#readme",
     "dependencies": {
         "discord-akairo": "github:discord-akairo/discord-akairo",
         "discord.js": "github:discordjs/discord.js",

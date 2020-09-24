@@ -20,7 +20,7 @@ class UnmuteCommand extends Command {
         if (admins.includes(msg.member.id)) {
             msg.member.voice.channel.members.each(async user => {
                 msg.guild.member(user).voice.setMute(false)
-                await sleep(200)
+                await sleep(1000)
             })
         }
     }

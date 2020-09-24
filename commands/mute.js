@@ -16,7 +16,6 @@ class MuteCommand extends Command {
                 msg.guild.member(user).voice.setMute(true)
             })
         }
-        
     }
 }
 
